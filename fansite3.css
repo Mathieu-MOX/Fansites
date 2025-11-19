@@ -260,3 +260,96 @@ button:hover {
   font-size: 0.9em;
   color: #555;
 }
+/* ===============================
+   Responsive Smartphone (<600px)
+================================= */
+@media screen and (max-width: 600px) {
+
+    .navbar, .navbar2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0 0 0;
+        display: block;
+    }
+
+    .heros {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Page Synopsis & Contenu */
+    .Fiche-technique,
+    .container,
+    .Synopsis {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .actors {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .actor img {
+        width: 120px;
+    }
+
+    /* Footer */
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+
+/* ===============================
+    Responsive Tablette (600–1024px)
+================================= */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .navbar, .navbar2 {
+        max-width: 95%;
+        padding: 10px 20px;
+    }
+
+    .nav-links a {
+        margin-left: 10px;
+    }
+
+    .heros {
+        gap: 20px;
+        padding: 40px 15px;
+    }
+
+    .hero {
+        width: 45%;
+    }
+
+    .actors {
+        max-width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    /* Formulaire & autres sections */
+    .container,
+    .Fiche-technique,
+    .Synopsis {
+        max-width: 90%;
+    }
+}
