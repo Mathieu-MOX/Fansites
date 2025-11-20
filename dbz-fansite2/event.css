@@ -27,6 +27,14 @@ body {
   color: white;
 }
 
+
+.blocnav {
+     width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -45,6 +53,7 @@ body {
     font-weight: bold;
     color: var(--clr-red-torii);
     font-size: 1.2em;
+    text-decoration: none;
 }
 
 .nav-links a {
@@ -65,7 +74,8 @@ body {
 
 /* Barre de navigation */
 .navcolor {
-   background-color: rgba(255, 255, 255, 0.9); 
+  margin-top: 5.2%;
+  background-color: rgba(255, 255, 255, 0.9); 
   padding: 2.5% 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -184,6 +194,32 @@ body {
 
 
 
+
+
+.linkfooter {
+  padding-top: 1%;
+  text-align: center;
+}
+
+.linkfooter p {
+    color: var(--clr-text-dark);
+    margin-bottom: 10px;
+}
+
+.linkfooter a {
+    color: var(--clr-red-torii);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; 
+    border-radius: 20px;
+    margin: 0 5px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.linkfooter a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
 
 
 /* Animation d’apparition */
