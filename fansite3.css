@@ -29,6 +29,7 @@ h1 {
     background-image: url("../images/Screen-Shot-2020-11-04-at-2.40.14-PM.png");
     background-size: cover;
     height: 250px;
+    color: var(--clr-red-torii);
 }
 
 /* --- NAVIGATION (HEADER) --- */
@@ -92,6 +93,7 @@ header {
     max-width: 600px;
     margin: auto;
     opacity: 0.8;
+    color: var(--clr-red-torii);
 }
 .espace {
   padding-top: 20px;
@@ -104,6 +106,7 @@ header {
     gap: 40px;
     padding: 60px 20px;
     background-color: transparent;
+    color: var(--clr-red-torii);
 }
 .hero {
     background-color: white;
@@ -209,7 +212,7 @@ footer a:hover {
 
 .container h2 {
   text-align: center;
-  color: #333;
+  color: var(--clr-red-torii);
   margin-bottom: 20px;
 }
 
@@ -217,7 +220,7 @@ label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
-  color: #333;
+  color: var(--clr-red-torii);
 }
 
 input[type="text"],
@@ -229,6 +232,7 @@ select {
   border-radius: 6px;
   margin-bottom: 20px;
   font-size: 1em;
+  color: var(--clr-red-torii);
 }
 
 textarea {
@@ -241,7 +245,7 @@ textarea {
 }
 
 button {
-  background-color: black;
+  background-color: var(--clr-red-torii);
   color: white;
   border: none;
   padding: 12px 20px;
@@ -258,7 +262,7 @@ button:hover {
 
 .policy-text {
   font-size: 0.9em;
-  color: #555;
+  color: var(--clr-red-torii);;
 }
 /* ===============================
    Responsive Smartphone (<600px)
