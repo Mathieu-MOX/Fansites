@@ -1,0 +1,361 @@
+/* ------------------------------
+   Styles généraux
+------------------------------ */
+/* --- PALETTE DE COULEURS --- */
+:root {
+    --clr-red-torii: #a54141; 
+    --clr-pink-sakura: #ffc9d2; 
+    --clr-pink-light: #fff0f3; /* RVB: 255, 240, 243 */
+    --clr-green-bamboo: #80a471; 
+    --clr-text-dark: #3a3a3a; 
+    --clr-white: #ffffff;
+}
+body {
+     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--clr-text-dark);
+    line-height: 1.6;
+    
+    /* CORRECTION : L'image couvre tout le fond et est centrée */
+    background-image: url("/Fansites/dbz-fansite2/adrien-website/images-CowboyBebop/manga.jpg"); 
+    background-size: cover; /* L'image couvre tout l'écran (zoom si nécessaire) */
+    background-repeat: no-repeat; /* N'affiche l'image qu'une seule fois */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    background-position: center center; 
+    background-color: #fce4ec; 
+}
+h1 {
+    text-align: center;
+    background-image: url("/Fansites/dbz-fansite2/adrien-website/images-CowboyBebop/Screen-Shot-2020-11-04-at-2.40.14-PM.png");
+    background-size: cover;
+    height: 250px;
+    color: var(--clr-red-torii);
+}
+
+/* --- NAVIGATION (HEADER) --- */
+header {
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px 30px;
+    
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid var(--clr-pink-sakura);
+    border-radius: 50px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    font-weight: bold;
+    color: var(--clr-red-torii);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--clr-red-torii);
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
+.navbar2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid var(--clr-pink-sakura);
+    border-radius: 50px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.Fiche-technique {
+    background: white;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.8;
+    color: var(--clr-red-torii);
+}
+.espace {
+  padding-top: 20px;
+}
+/* --- les personnages et profils--- */
+.heros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 20px;
+    background-color: transparent;
+    color: var(--clr-red-torii);
+}
+.hero {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+
+/* --- formulaire --- */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: var(--clr-text-dark); 
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); 
+
+    border-top: none; 
+    margin-top: 50px;
+}
+
+footer p {
+    color: var(--clr-text-dark);
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--clr-red-torii);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; 
+    border-radius: 20px;
+    margin: 0 5px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
+.Synopsis {
+    text-align: left;
+    padding: 80px 20px;
+    background-color: white;
+    color: black;
+}
+.ma-photo {
+    max-width: 100%;
+    height: auto;
+}
+/* ------------------------------
+   voice actor
+------------------------------ */
+.actors {
+  display: flex;
+  justify-content: space-evenly;  
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;                      
+}
+
+.actor {
+  text-align: center;
+}
+
+.actor img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+/* ------------------------------
+   contact
+------------------------------ */
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-image: url("/Fansites/dbz-fansite2/adrien-website/images-CowboyBebop/cowboy-bebop.jpg");
+  opacity: 0.8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+  text-align: center;
+  color: var(--clr-red-torii);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: var(--clr-red-torii);
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: var(--clr-red-torii);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.checkbox {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--clr-red-torii);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.policy-text {
+  font-size: 0.9em;
+  color: var(--clr-red-torii);;
+}
+/* ===============================
+   Responsive Smartphone (<600px)
+================================= */
+@media screen and (max-width: 600px) {
+
+    .navbar, .navbar2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0 0 0;
+        display: block;
+    }
+
+    .heros {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Page Synopsis & Contenu */
+    .Fiche-technique,
+    .container,
+    .Synopsis {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+
+    .actors {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .actor img {
+        width: 120px;
+    }
+
+    /* Footer */
+    footer a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+
+
+/* ===============================
+    Responsive Tablette (600–1024px)
+================================= */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .navbar, .navbar2 {
+        max-width: 95%;
+        padding: 10px 20px;
+    }
+
+    .nav-links a {
+        margin-left: 10px;
+    }
+
+    .heros {
+        gap: 20px;
+        padding: 40px 15px;
+    }
+
+    .hero {
+        width: 45%;
+    }
+
+    .actors {
+        max-width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+
+    /* Formulaire & autres sections */
+    .container,
+    .Fiche-technique,
+    .Synopsis {
+        max-width: 90%;
+    }
+}
