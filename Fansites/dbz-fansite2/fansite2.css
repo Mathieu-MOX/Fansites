@@ -1,0 +1,317 @@
+/* Réinitialisation de base */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+:root {
+    --clr-red-torii: #a54141; 
+    --clr-pink-sakura: #ffc9d2; 
+    --clr-pink-light: #fff0f3; /* RVB: 255, 240, 243 */
+    --clr-green-bamboo: #80a471; 
+    --clr-text-dark: #3a3a3a; 
+    --clr-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Fond dynamique */
+body {
+  background-image: url('asset/manga.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+
+.blocnav {
+     width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid var(--clr-pink-sakura);
+    border-radius: 50px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    font-weight: bold;
+    color: var(--clr-red-torii);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--clr-red-torii);
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
+
+/* Barre de navigation */
+.navcolor {
+  margin-top: 5.2%;
+   background-color: rgba(255, 255, 255, 0.9); 
+  padding: 2.5% 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Menu horizontal */
+.menustyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
+
+/* Liens du menu */
+.menustyle li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menustyle li a:hover {
+  background-color: yellow;
+  color: black;
+  box-shadow: 0 0 10px yellow;
+}
+
+
+
+
+/* Logo DBZ */
+.dbzlogo {
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.dbzlogo:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.mainpad {
+  padding-right: 11%;
+  padding-left: 11%;
+  padding-bottom: 4.3%; 
+  padding-top: 4%;
+}
+
+
+
+
+/* Bloc d’accueil */
+.blocsec1 {
+  padding: 57px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocsec1 p {
+  color: black;
+  line-height: 1.7;
+  text-align: justify;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.blocsec1 p:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+.linkfooter {
+  padding-top: 1%;
+  text-align: center;
+}
+
+.linkfooter p {
+    color: var(--clr-text-dark);
+    margin-bottom: 10px;
+}
+
+.linkfooter a {
+    color: var(--clr-red-torii);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; 
+    border-radius: 20px;
+    margin: 0 5px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.linkfooter a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
+
+
+
+
+
+
+/* Titre animé */
+.blocsec1 h1 {
+  padding-bottom: 5%;
+  font-size: 3rem;
+  background: linear-gradient(90deg, red, blue, yellow, orange, green, cyan);
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s infinite linear;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+
+
+/* Animation d’apparition bloc1*/
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Titre animé avec apparition */
+.blocsec1 h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, red, blue, yellow, orange, green, cyan);
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s infinite linear, fadeInUp 1s ease-out;
+}
+
+/* --------------------------------------------------------------------- */
+/* Animation de fondu avec montée */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Appliquer l'animation à la balise <p> */
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.5s; /* délai avant le début */
+}
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (max-width: 768px) {
+  /* Réduction du logo */
+  .dbzlogo {
+    width: 80px;
+  }
+
+  /* Barre de navigation plus compacte */
+  .navcolor {
+    padding: 15px 0;
+  }
+
+  /* Menu en colonne sur mobile */
+  .menustyle {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menustyle li a {
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+
+  /* Bloc d’accueil plus souple */
+  .blocsec1,
+  .blocsec2 {
+    flex-direction: column;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  /* Titre animé plus petit */
+  .blocsec1 h1 {
+    font-size: 2rem;
+  }
+
+  /* Texte du bloc secondaire */
+  .blocsec2 p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  /* Ajustement du fond pour éviter le scroll horizontal */
+  body {
+    background-attachment: scroll;
+    background-position: top;
+  }
+}
