@@ -1,0 +1,297 @@
+/* Réinitialisation de base */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+:root {
+    --clr-red-torii: #a54141; 
+    --clr-pink-sakura: #ffc9d2; 
+    --clr-pink-light: #fff0f3; /* RVB: 255, 240, 243 */
+    --clr-green-bamboo: #80a471; 
+    --clr-text-dark: #3a3a3a; 
+    --clr-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Fond dynamique */
+body {
+  background-image: url('asset/manga.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+
+.blocnav {
+     width: 100%;
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 15px 30px;
+    
+    background-color: rgba(255, 255, 255, 0.9); 
+    border: 2px solid var(--clr-pink-sakura);
+    border-radius: 50px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+    font-weight: bold;
+    color: var(--clr-red-torii);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--clr-red-torii);
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
+
+
+
+/* Barre de navigation */
+.navcolor {
+  margin-top: 5.2%;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 2.5% 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Menu horizontal */
+.menustyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+
+
+/* Liens du menu */
+.menustyle li a {
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menustyle li a:hover {
+  background-color: yellow;
+  color: black;
+  box-shadow: 0 0 10px yellow;
+}
+
+
+
+
+/* Logo DBZ */
+.dbzlogo {
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.dbzlogo:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.link-card img {
+  width: 55%;
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  padding: 80px 10%;
+  padding-top: 10.52%;
+}
+
+.link-card {
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  padding: 40px 25px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.link-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  background-size: 400% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s infinite linear;
+}
+
+.link-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.link-card a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #00ffff, #007cf0);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.link-card a:hover {
+  background: linear-gradient(90deg, #ffcc00, #ff6600);
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+
+
+
+
+.linkfooter {
+  padding-top: 1%;
+  text-align: center;
+}
+
+.linkfooter p {
+    color: var(--clr-text-dark);
+    margin-bottom: 10px;
+}
+
+.linkfooter a {
+    color: var(--clr-red-torii);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px; 
+    border-radius: 20px;
+    margin: 0 5px; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.linkfooter a:hover {
+    background-color: var(--clr-pink-sakura);
+    color: var(--clr-white);
+}
+
+
+/* Animation d’apparition */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  /* Logo plus petit */
+  .dbzlogo {
+    width: 80px;
+  }
+
+  /* Menu vertical et espacé */
+  .menustyle {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .menustyle li a {
+    padding: 10px 14px;
+    font-size: 1rem;
+  }
+
+  /* Grille en une colonne */
+  .link-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 5%;
+    gap: 30px;
+  }
+
+  /* Cartes plus compactes */
+  .link-card {
+    padding: 25px 15px;
+    margin: 5px;
+  }
+
+  .link-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .link-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .link-card img {
+    width: 80%;
+  }
+
+  .link-card a {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+
+  /* Fond mobile plus fluide */
+  body {
+    background-attachment: scroll;
+    background-position: top;
+  }
+}
