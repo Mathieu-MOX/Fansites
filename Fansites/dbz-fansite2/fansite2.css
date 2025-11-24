@@ -27,6 +27,7 @@ body {
   color: white;
 }
 
+/* navbar navigation entre les pages Dragon ball z, cowbow bebop, demon slayer et l'acceuil */
 
 .blocnav {
      width: 100%;
@@ -102,9 +103,9 @@ body {
 }
 
 .menustyle li a:hover {
-  background-color: yellow;
-  color: black;
-  box-shadow: 0 0 10px yellow;
+  background-color: var(--clr-pink-sakura);
+  color: white;
+  background-color: var(--clr-pink-sakura);
 }
 
 
@@ -201,7 +202,7 @@ body {
 .blocsec1 h1 {
   padding-bottom: 5%;
   font-size: 3rem;
-  background: linear-gradient(90deg, red, blue, yellow, orange, green, cyan);
+  background: #a54141;
   background-size: 400% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -232,7 +233,7 @@ body {
 /* Titre animé avec apparition */
 .blocsec1 h1 {
   font-size: 3rem;
-  background: linear-gradient(90deg, red, blue, yellow, orange, green, cyan);
+  background: #a54141;
   background-size: 400% 100%;
   background-clip: text;
   -webkit-background-clip: text;

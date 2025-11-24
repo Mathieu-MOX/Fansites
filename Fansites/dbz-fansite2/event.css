@@ -28,6 +28,10 @@ body {
 }
 
 
+/* navbar navigation entre les pages Dragon ball z, cowbow bebop, demon slayer et l'acceuil */
+
+
+
 .blocnav {
      width: 100%;
     position: fixed; 
@@ -104,9 +108,9 @@ body {
 }
 
 .menustyle li a:hover {
-  background-color: yellow;
-  color: black;
-  box-shadow: 0 0 10px yellow;
+  background-color: var(--clr-pink-sakura);
+  color: white;
+  background-color: var(--clr-pink-sakura);
 }
 
 
@@ -154,13 +158,13 @@ body {
 
 .link-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 15px #ffcc00;
+  box-shadow: 0 0 15px #ffc9d2;
 }
 
 .link-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  background: linear-gradient(90deg, #ff00cc, #3333ff);
+  background: #a54141;
   background-size: 400% 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -178,18 +182,19 @@ body {
 .link-card a {
   display: inline-block;
   padding: 10px 20px;
-  background: linear-gradient(90deg, #00ffff, #007cf0);
+  background: #a54141;
   color: black;
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px #00ffff;
+  box-shadow: 0 0 10px #a54141;
 }
 
 .link-card a:hover {
-  background: linear-gradient(90deg, #ffcc00, #ff6600);
-  box-shadow: 0 0 15px #ffcc00;
+  background: #ffc9d2;
+  box-shadow: 0 0 15px white;
+  color: white;
 }
 
 
