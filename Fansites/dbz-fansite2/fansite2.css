@@ -271,6 +271,29 @@ body {
 
 @media screen and (max-width: 768px) {
   /* Réduction du logo */
+
+  .navbar {
+    flex-direction: column;
+    align-items:center;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    text-align: center;
+    margin: 8px 0;
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+
+
+
   .dbzlogo {
     width: 80px;
   }
@@ -282,6 +305,7 @@ body {
 
   /* Menu en colonne sur mobile */
   .menustyle {
+    margin-top: 49%;
     flex-direction: column;
     gap: 15px;
   }
