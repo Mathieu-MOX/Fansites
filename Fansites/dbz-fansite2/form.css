@@ -183,7 +183,7 @@ body {
 
 .styled-form input:focus,
 .styled-form textarea:focus {
-  box-shadow: 0 0 10px #80a471;
+  box-shadow: 0 0 10px #ffc9d2;
 }
 
 .styled-form button {
